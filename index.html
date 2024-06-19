@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <title>Calculadora de propinas</title>
+
+</head>
+<body>
+
+  <main class="main-container">
+
+    <header class="header">
+      <div class="header__texts">
+        <h1 class="header__title">Spli<br>tter</h1>
+      </div>
+    </header>
+
+    <section class="content">
+      <article class="inputs-container">
+        <div>
+          <label for="bill" class="bill__title">Bill</label>
+          <input id="bill" type="number" class="bill__input" value="0">
+        </div>
+        <fieldset class="tip-select">
+          <legend class="tip__legend">Select Tip %</legend>
+          <button class="btns__button btns__button--selected">5%</button>
+          <button class="btns__button">10%</button>
+          <button class="btns__button">15%</button>
+          <button class="btns__button">25%</button>
+          <button class="btns__button">50%</button>
+          <input type="number" placeholder="Custom" class="btns__custom">
+        </fieldset>
+        <div>
+          <label for="number of people" class="number-people__title">Number of people <span id="alert"></span></label>
+          <input id="number-people" type="number" class="number-people__input" value="5">
+        </div>
+      </article>
+
+      <article class="result-container">
+          <div class="amount-container">
+
+            <div class="tip-amount__texts">
+              <h2 class="tip-amount__subtitle">Tip Amount</h2>
+              <p class="tip-amount__paragraph">/ person</p>
+            </div>
+
+              <h2 class="tip-amount__number">0</h2>
+
+              <div class="tip-total__texts">
+                <h2 class="tip-total__subtitle">Total</h2>
+                <p class="tip-total__paragraph">/ person</p>
+              </div>
+
+              <h2 class="tip-total__number">0</h2>
+          </div>
+          
+
+        <button class="reset__button">Reset</button>
+
+      </article>
+
+    </section>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
